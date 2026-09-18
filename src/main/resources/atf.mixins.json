@@ -4,7 +4,8 @@
   "package": "zeta_team.atf.mixins",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "AnvilMenuMixin"
+    "AnvilMenuMixin",
+    "ItemCombinerMenuMixin"
   ],
   "injectors": {
     "defaultRequire": 1

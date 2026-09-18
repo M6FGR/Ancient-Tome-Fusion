@@ -12,6 +12,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.ItemLore;
 import net.minecraft.world.item.enchantment.Enchantment;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
 import org.violetmoon.quark.content.tools.item.AncientTomeItem;
 import org.violetmoon.quark.content.tools.module.AncientTomesModule;
 
@@ -19,6 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @JeiPlugin
+@OnlyIn(Dist.CLIENT)
 public class AncientTomeFusionJeiPlugin implements IModPlugin {
     public static final ResourceLocation PLUGIN_ID = ResourceLocation.fromNamespaceAndPath("atf", "jei_plugin");
 

@@ -9,12 +9,15 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
 import org.jetbrains.annotations.NotNull;
 import org.lwjgl.glfw.GLFW;
 import zeta_team.atf.config.AncientTomeFusionConfig;
 
 import java.util.List;
 
+@OnlyIn(Dist.CLIENT)
 public class AncientTomeListScreen extends Screen {
     private final Screen parentScreen;
     private EditBox addInput;

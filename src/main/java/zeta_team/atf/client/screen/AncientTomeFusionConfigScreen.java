@@ -8,6 +8,8 @@ import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.neoforge.network.PacketDistributor;
 import org.jetbrains.annotations.NotNull;
@@ -18,6 +20,7 @@ import zeta_team.atf.client.screen.subs.AncientTomeWeightsScreen;
 import zeta_team.atf.config.AncientTomeFusionConfig;
 import zeta_team.atf.network.UpdateATFConfigPayload;
 
+@OnlyIn(Dist.CLIENT)
 public class AncientTomeFusionConfigScreen extends Screen {
     private ButtonUtil optionList;
     private final Screen previousScreen;
